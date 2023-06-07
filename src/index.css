@@ -15,6 +15,7 @@
   --color-bg-variant: #04432cdb;
   --color-primary: #36ff79ed;
   --color-primary-variant: #08f0dda0;
+  --color-secondary: #a9e2a7ed;
   --color-white: #fff;
   --color-light: #98fef0e7;
 
@@ -50,19 +51,19 @@ body {
   right: 12.8%;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-bg-variant);
   transition: var(--transition);
 }
 
 .btn:hover {
-  background-color: var(--color-white);
-  color: var(--color-bg);
+  background-color: var(--color-primary);
+  color: var(--color-bg-variant);
   border-color: transparent;
 }
 
 .btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-bg);
+  background-color: var(--color-bg-variant);
+  color: var(--color-white);
 }
 
 a {
