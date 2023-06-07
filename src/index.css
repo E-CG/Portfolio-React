@@ -1,4 +1,5 @@
 * {
+  /* screen size */
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,33 +10,39 @@
 }
 
 :root {
-  --color-bg: #013b3e;
-  --color-bg-variant: #2c6c54;
-  --color-primary: #4dff8b;
-  --color-primary-variant: rgba(77, 255, 92, 0.4);
+  /* Colors for the web-site */
+  --color-bg: #183133c5;
+  --color-bg-variant: #04432cdb;
+  --color-primary: #36ff79ed;
+  --color-primary-variant: #08f0dda0;
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-light: #98fef0e7;
 
+  /* Smooth the mini animations */
   --transition: all 400ms ease;
 
+  /* Size of containers */
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
 }
 
 html {
+  /* Smooth scroll */
   scroll-behavior: smooth;
 }
 
 body {
+  /* For background and font */
   background-color: var(--color-bg);
   color: var(--color-white);
-  font-family: "Dosis", sans-serif, "Kreon", serif, "Signika Negative";
+  font-family: "Dosis", sans-serif, "Kreon";
   line-height: 1.7;
   background-image: url(./assets/pattern-bg.png);
 }
 
 a {
+  /* Little animation for links */
   transition: var(--transition);
   color: var(--color-primary-variant);
 }
@@ -68,10 +75,12 @@ img {
 }
 
 #icon {
+  /* Making icons a lil bit more big (not the container) */
   width: 1.5rem;
   height: 1.5rem;
 }
 
+/* Responsive sizes */
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);

@@ -1,0 +1,33 @@
+nav {
+  /* False container to make a shadow */
+  background: rgba(0, 0, 0, 0.474);
+  width: max-content;
+  display: block;
+  /* container bar limits */
+  padding: 0.6rem 1.3rem;
+  z-index: 2;
+  /* Puting in position the bar (center) */
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1.8rem;
+  display: flex;
+  /* space between icons */
+  gap: 1.2rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(20px);
+}
+
+nav a {
+/* for the icons */
+  background: transparent;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+}
+
+nav a:hover {
+  background: rgba(0, 255, 132, 0.3);
+  color: var(--color-white);
+}
