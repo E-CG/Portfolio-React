@@ -5,6 +5,7 @@ import { FaHome } from "react-icons/fa";
 import { FaBook } from "react-icons/fa";
 import { FaIdCard } from "react-icons/fa";
 
+
 import "./bar.css";
 
 const Bar = () => {
