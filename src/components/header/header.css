@@ -1,6 +1,7 @@
 header {
   height: 100%;
-  padding-top: 7rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
   overflow: hidden;
 }
 
@@ -11,20 +12,20 @@ header {
 }
 
 .header_socials {
+  align-items: center;
+  bottom: -0.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  position: absolute;
+  gap: 0.8rem;
   left: 5rem;
-  bottom: 1rem;
+  position: absolute;
 }
 
 .header_socials::after {
+  background: var(--color-primary);
   content: "";
+  height: 2rem;
   width: 1px;
-  height: 8rem;
-  background: var(--color-primary-variant);
 }
 
 @media screen and (max-width: 1024px) {

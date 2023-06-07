@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const HeaderSocials = () => {
   return (
-    <div classname="header_social">
+    <div className="header_socials">
       <a href="https://github.com/E-CG" target="_blank" rel="noreferrer">
         <FaGithubAlt id="icon" />
       </a>
