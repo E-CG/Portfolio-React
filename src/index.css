@@ -18,6 +18,7 @@
   --color-secondary: #a9e2a7ed;
   --color-white: #fff;
   --color-light: #98fef0e7;
+  --shadow-color: 185deg 56% 5%;
 
   /* Smooth the mini animations */
   --transition: all 400ms ease;
@@ -26,6 +27,12 @@
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
+
+  /* Box shadows */
+  --shadow-elevation-medium:
+    0px 0.5px 0.6px hsl(var(--shadow-color) / 0.28),
+    -0.1px 2.8px 3.6px -0.7px hsl(var(--shadow-color) / 0.43),
+    -0.3px 9.5px 12.3px -1.4px hsl(var(--shadow-color) / 0.78);
 }
 
 html {
@@ -101,7 +108,7 @@ section > h2 {
 img {
   display: block;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .container {
@@ -115,8 +122,8 @@ img {
 
 #icon {
   /* Making icons a lil bit more big (not the container) */
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 /* Responsive sizes */

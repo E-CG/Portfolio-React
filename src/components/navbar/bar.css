@@ -5,7 +5,7 @@ nav {
   display: block;
   /* container bar limits */
   padding: 0.6rem 1.3rem;
-  z-index: 2;
+  z-index: 3;
   /* Puting in position the bar (center) */
   position: fixed;
   left: 50%;

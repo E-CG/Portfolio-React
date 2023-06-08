@@ -2,33 +2,56 @@
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
-  padding-top: 0.8rem;
   padding-bottom: 5rem;
 }
 
+/* Border animation for the image */
 .about_me {
-  width: 100%;
+  width: 18rem;
+  height: 18rem;
   aspect-ratio: 1/1;
-  border-radius: 2rem;
+  border-radius: 100%;
   background: linear-gradient(
-    45deg,
-    transparent,
-    var(--color-primary),
-    transparent
+    315deg,
+    var(--color-bg-variant),
+    var(--color-primary)
   );
   display: grid;
   place-items: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.about_me::before {
+  content: "";
+  position: absolute;
+  inset: -1rem 6rem;
+  background: linear-gradient(315deg, var(--color-bg-variant), var(--color-secondary));
+  transition: var(--transition);
+  animation: rotation 8s linear infinite;
+}
+
+.about_me:hover::before{
+  inset: -0.6rem 0rem;
+}
+
+.about_me::after{
+  content: '';
+  position: absolute;
+  inset: 6px;
+  background: #183133;
+  border-radius: 100%;
+  z-index: 1;
+}
+/* Border animation for the image */
 
 .about_me-img {
-  border-radius: 2rem;
+  position: absolute;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 100%;
   overflow: hidden;
-  transform: rotate(10deg);
-  transition: var(--transition);
-}
-
-.about_me-img:hover {
-  transform: rotate(0);
+  z-index: 2;
 }
 
 .about_cards {
@@ -47,6 +70,7 @@
   max-width: 70%;
   max-height: 100%;
   margin-left: 2.5rem;
+  box-shadow: var(--shadow-elevation-medium);
 }
 
 .about_card:hover {
@@ -62,9 +86,8 @@
 }
 
 #title-section {
-    font-size: 2rem;
-    font-weight: 800;
-  padding-top: 1.8rem;
+  font-size: 2rem;
+  font-weight: 800;
   text-align: center;
 }
 
@@ -83,6 +106,15 @@
   font-size: 1.2rem;
 }
 
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+  10%{
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .about_container {
     grid-template-columns: 1fr;
@@ -90,7 +122,8 @@
   }
 
   .about_me {
-    width: 50%;
+    width: 18rem;
+    height: 18rem;
     margin: 2rem auto 4rem;
   }
 
@@ -101,7 +134,8 @@
 
 @media screen and (max-width: 600px) {
   .about_me {
-    width: 65%;
+    width: 18rem;
+    height: 18rem;
     margin: 0rem auto 3rem;
   }
 
