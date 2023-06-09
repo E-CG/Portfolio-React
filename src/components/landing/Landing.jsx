@@ -28,8 +28,9 @@ const Landing = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-            consequuntur rem possimus iust
+            Motivated to improve my skills and knowledge about the development
+            of ideas through programming. I have worked on several projects
+            where I've learned what teamwork is
           </p>
           <a href="#contact" className="btn btn-primary">
             Talk with me
