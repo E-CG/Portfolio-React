@@ -120,6 +120,12 @@ img {
   color: var(--color-light);
 }
 
+#title-section {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
 #icon {
   /* Making icons a lil bit more big (not the container) */
   width: 2rem;

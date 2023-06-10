@@ -12,6 +12,7 @@ import { FaHtml5 } from "react-icons/fa";
 import "./skills.css";
 
 const Skills = () => {
+  /* Script for the animations of tool items */
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting){
@@ -26,7 +27,7 @@ const Skills = () => {
 
   return (
     <section id="skills">
-      <h2>Skills and Tools</h2>
+      <h2 id="title-section">Skills and Tools</h2>
       <div className="container skills_container">
         <div className="soft_skills">
           <article className="soft_details">
@@ -59,7 +60,9 @@ const Skills = () => {
           </article>
         </div>
         <div className="tools_hidden">
-          <article className="tools_details">
+          <h2>Tools that I use</h2>
+          <div className="tools_content">
+            <article className="tools_details">
             <FaJava id="tool_icons" />
           </article>
           <article className="tools_details">
@@ -71,6 +74,7 @@ const Skills = () => {
           <article className="tools_details">
             <FaHtml5 id="tool_icons" />
           </article>
+          </div>
         </div>
       </div>
     </section>
