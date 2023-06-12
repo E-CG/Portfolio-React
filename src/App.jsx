@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Bar from "./components/navbar/Bar";
 import Landing from "./components/landing/Landing";
 import Skills from "./components/skills/Skills";
+import Projects from './components/projects/Projects'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Bar />
       <Landing/>
       <Skills/>
+      <Projects/>
       <Footer />
     </>
   );
