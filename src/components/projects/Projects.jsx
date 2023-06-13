@@ -1,7 +1,7 @@
 import React from "react";
 import IMG1 from '../../assets/favicon.png'
 
-import "./project.css";
+import "./projects.css";
 
 const Projects = () => {
   const myProjects = [
