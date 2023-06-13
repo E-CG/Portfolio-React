@@ -46,6 +46,13 @@ body {
   font-family: "Dosis", sans-serif, "Kreon";
   line-height: 1.7;
   background-image: url(./assets/pattern-bg.png);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 .btn {
