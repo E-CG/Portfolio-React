@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { FaBalanceScaleRight } from "react-icons/fa";
 import { FaComments } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
@@ -13,17 +13,31 @@ import "./skills.css";
 
 const Skills = () => {
   /* Script for the animations of tool items */
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("tools_show");
-      } else {
-        entry.target.classList.remove("tools_show");
-      }
+  const toolsRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("tools_show");
+        } else {
+          entry.target.classList.remove("tools_show");
+        }
+      });
     });
-  });
-  const toolsElements = document.querySelectorAll(".tools_hidden");
-  toolsElements.forEach((el) => observer.observe(el));
+
+    /* When the component dismount and mount */
+    const toolsElement = toolsRef.current;
+    if (toolsElement) {
+      observer.observe(toolsElement);
+    }
+
+    return () => {
+      if (toolsElement) {
+        observer.unobserve(toolsElement);
+      }
+    };
+  }, []);
 
   return (
     <section id="skills">
@@ -60,7 +74,7 @@ const Skills = () => {
           </article>
         </div>
         <div className="tools_content">
-          <div className="tools_hidden">
+          <div ref={toolsRef} className="tools_hidden">
             <div className="tools_details">
               <FaJava id="tool_icons" />
             </div>

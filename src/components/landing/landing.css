@@ -100,6 +100,13 @@
   font-size: 1.2rem;
 }
 
+.btn_po{
+  position: absolute;
+  right: 12.8%;
+  background-color: var(--color-bg-variant);
+  color: var(--color-white);
+}
+
 @keyframes rotation {
   0%{
     transform: rotate(0deg);

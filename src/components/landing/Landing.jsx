@@ -32,7 +32,7 @@ const Landing = () => {
             of ideas through programming. I have worked on several projects
             where I've learned what teamwork is
           </p>
-          <a href="#contact" className="btn btn-primary">
+          <a href="#contact" className="btn btn_po">
             Talk with me
           </a>
         </div>

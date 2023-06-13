@@ -7,15 +7,25 @@ const Projects = () => {
   const myProjects = [
     {
       id: 1,
-      title: "Autonomous Car",
-      date: '2023',
+      title: "Autonomous Car 🚗",
+      date: '2023📅',
       img: IMG1,
       description:
         "autonomous car that is capable of identifying obstacles as it moves",
       technologies: "Python | Raspberry Pi4",
       link: "#",
       github: "https://github.com/E-CG/CarroObstaculos",
-    },
+    },{
+      id: 2,
+      title: "Autonomous Car 🚗",
+      date: '2023📅',
+      img: IMG1,
+      description:
+        "autonomous car that is capable of identifying obstacles as it moves",
+      technologies: "Python | Raspberry Pi4",
+      link: "#",
+      github: "https://github.com/E-CG/CarroObstaculos",
+    }
   ];
   return (
     <section id="projects">
