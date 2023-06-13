@@ -41,6 +41,13 @@ const Contact = () => {
                 <a href="mailto:estebancogo47@gmail.com">Send a message</a>
             </div>
         </div>
+        <form ref={formRef} onSubmit={handleSubmit}>
+          <input type="text" placeholder="Your Name" name="user_name" required/>
+          <input type="text" placeholder="Your email" name="user_email" required/>
+          <textarea placeholder="Your message" rows="6" name="message" required></textarea>
+          <button type="submit" className="btn btn-primary">Send</button>
+          {message && <span>Thanks, I'll reply soon📫</span>}
+        </form>
       </div>
     </section>
   );
