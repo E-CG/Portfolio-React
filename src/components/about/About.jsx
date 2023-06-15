@@ -2,9 +2,9 @@ import React from "react";
 import { FaRegIdBadge } from "react-icons/fa";
 import { FaUniversity } from "react-icons/fa";
 import ME from "../../assets/me.png";
-import "./landing.css";
+import "./about.css";
 
-const Landing = () => {
+const About = () => {
   return (
     <section id="about">
       <h2 id="title-section">About Me</h2>
@@ -41,4 +41,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default About;
