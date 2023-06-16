@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/header/Header";
+import Landing from "./components/landing/Landing";
 import Bar from "./components/navbar/Bar";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
@@ -35,6 +36,7 @@ const App = () => {
         <div className="app">
           <Header />
           <Bar activeNav={activeSection} onNavClick={handleNavClick} />
+          {activeSection === "#home" && <Landing />}
           {activeSection === "#about" && <About />}
           {activeSection === "#skills" && <Skills />}
           {activeSection === "#projects" && <Projects />}

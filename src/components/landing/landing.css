@@ -1,0 +1,31 @@
+.container_landing {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 4rem;
+  padding-bottom: 6rem;
+}
+
+.landing_card {
+  padding: 1rem;
+  transition: var(--transition);
+  max-width: 70%;
+}
+
+.landing_card h3{
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--color-white);
+}
+
+.landing_card p{
+    font-size: 1.5rem;
+    color: var(--color-light);
+    padding: 0.8rem;
+}
+
+.icons_landing{
+    display: flex;
+    gap: 1rem;
+    color: var(--color-primary);
+}
