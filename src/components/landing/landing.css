@@ -1,18 +1,13 @@
 .container_landing {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 6rem;
+  gap: 4rem;
+  padding-top: 2.5rem;
 }
 
-.landing_card {
-  background: var(--color-bg-variant);
-  border: 1px solid transparent;
-  border-radius: 1rem;
-  padding: 1rem;
-  max-width: 80%;
-  max-height: 100%;
-  box-shadow: var(--shadow-elevation-medium);
+.landing_content {
+  max-width: 60%;
+  max-height: 60%;
 }
 
 .landing_card h3 {
@@ -30,9 +25,23 @@
   animation: fadeIn 1s forwards;
 }
 
-.logo_img {
+.landing_img {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.landing_img img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* Fix for IE9 and earlier */
+}
+
+
+.logo_img img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
 }
 
 .icons_landing {
@@ -58,14 +67,29 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .container_landing {
-    grid-template-columns: 100%;
+    flex-direction: column;
   }
 
   .landing_card {
-    flex-basis: 60%;
-    margin-right: 1rem;
+    max-width: 80%;
+  }
+
+  .landing_img {
+    max-width: 80%;
+    order: 1;
+  }
+
+  .landing_content {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .container_landing {
+    grid-template-columns: 100%;
   }
 
   .landing_img {

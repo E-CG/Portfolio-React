@@ -1,13 +1,13 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
+import IMGCurrent from '../../assets/current.png'
 
 import "./landing.css";
 
 const Landing = () => {
   return (
     <section id="home">
-      <h2 id="title-section">Hola</h2>
       <div className="container container_landing">
         <div className="landing_content">
           <article className="landing_card">
@@ -26,7 +26,7 @@ const Landing = () => {
 
         <div className="landing_img">
           <div className="logo_img">
-            <img src="" alt="me" />
+            <img src={IMGCurrent} alt="current" />
           </div>
         </div>
       </div>
