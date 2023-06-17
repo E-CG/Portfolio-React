@@ -7,9 +7,10 @@ import "./landing.css";
 const Landing = () => {
   return (
     <section id="home">
+      <h2 id="title-section">Hola</h2>
       <div className="container container_landing">
-        <div className="landing_card">
-          <article>
+        <div className="landing_content">
+          <article className="landing_card">
             <h3>Currently working on..</h3>
             <p>
               A trivia game with different type of questions. This with the
@@ -22,8 +23,11 @@ const Landing = () => {
             </ul>
           </article>
         </div>
+
         <div className="landing_img">
-          <img src="" alt="logo" />
+          <div className="logo_img">
+            <img src="" alt="me" />
+          </div>
         </div>
       </div>
     </section>
