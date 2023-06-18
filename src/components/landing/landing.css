@@ -8,6 +8,7 @@
 .landing_content {
   max-width: 60%;
   max-height: 60%;
+  padding: 2rem;
 }
 
 .landing_card h3 {
@@ -29,12 +30,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.landing_img img {
-  max-width: 100%;
-  height: auto;
-  width: auto\9; /* Fix for IE9 and earlier */
 }
 
 
@@ -87,18 +82,8 @@
   }
 }
 
-@media (min-width: 600px) {
-  .container_landing {
-    grid-template-columns: 100%;
-  }
-
-  .landing_img {
-    flex-basis: 40%;
-  }
-}
-
 @media (min-width: 1024px) {
   .container_landing {
-    max-width: 60rem;
+    flex-basis: 60%;
   }
 }
