@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import Header from "./components/header/Header";
 import Landing from "./components/landing/Landing";
 import Bar from "./components/navbar/Bar";
@@ -8,6 +8,17 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 
 const App = () => {
+  useEffect(() => {
+    // URL cleaner
+    var url = window.location.href;
+
+    if (url.indexOf("#") !== -1) {
+      var cleanUrl = url.substring(0, url.indexOf("#"));
+
+      window.history.replaceState({}, document.title, cleanUrl);
+    }
+  }, []);
+
   /* Nav Bar */
   const [activeSection, setActiveSection] = useState("#home");
 
